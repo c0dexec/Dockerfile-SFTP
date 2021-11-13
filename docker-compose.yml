@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  sftp:
+    container_name: "sftp"
+    image: "sftp:1"
+    hostname: "sftp"
+    restart: always
+    ports:
+      - "21:22"
+    # Setup you volume mounts.
+    volumes:
+      - "/Sam-T5:/data/sftp/upload"

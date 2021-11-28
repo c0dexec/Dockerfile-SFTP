@@ -4,7 +4,7 @@ I first created a Dockerfile which created a image for my SFTP server. Then to d
 ## Dockerfile 
 I created a Dockerfile for a SFTP server for practice, in order to familarize myself with Dockerfiles.
 
-For the ease of use add your public keys for hosts that you want to get password-less SFTP sessions setup for.
+For the ease of use add your public keys for hosts that you want to get password-less SFTP sessions setup for with in the ``authorized_keys`` file while making sure that it has 644(-rw-r--r--) permissions.
 ### Docker Build
 ```
 docker build -t sftp:1 .
